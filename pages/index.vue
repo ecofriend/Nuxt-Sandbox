@@ -6,12 +6,12 @@
           <v-list-item v-for="(item, index) in stuff" :key="index">
             <v-list-item-content :value="item.itemName">
               {{ item }}
-              <v-list-item-icon>
-                <v-icon color="red lighten-3" @click="removeItem(index)">
-                  mdi-trash-can-outline
-                </v-icon>
-              </v-list-item-icon>
             </v-list-item-content>
+            <v-list-item-icon>
+              <v-icon color="red lighten-3" @click="removeItem(index)">
+                mdi-trash-can-outline
+              </v-icon>
+            </v-list-item-icon>
           </v-list-item>
         </draggable>
       </v-list-item-group>
